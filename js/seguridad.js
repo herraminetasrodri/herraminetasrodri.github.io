@@ -51,7 +51,7 @@ export async function
 }
 
 export async function
-  terminaSesión() {
+  terminarSesión() {
   try {
     await getAuth().signOut();
   } catch (e) {
