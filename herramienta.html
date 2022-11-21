@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>Herramienta</title>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js">
+    </script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+</head>
+<body>
+  
+    <header >
+      <h1 id="text1">Herramienta  </h1>
+      <div class="herramientas">
+        <button><a href="herramientas.html">
+          Cancelar</a>
+        </button>
+        <button>Guardar</button>
+        <button name="eliminar"
+          type="button">
+          Eliminar
+        </button>
+      </div>
+    </header>
+    <form id="forma" name="forma">
+      <mi-nav></mi-nav>
+    <p>
+      <label>
+        Codigo
+        <input name="matricula"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Nombre
+        <input name="nombre"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Clasificacion 
+        <input name="telefono"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Precio
+        <input name="grupo"
+          type="number" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Fecha
+        <input name="fecha" type="date" required>
+      </label>
+    </p>
+    <mi-footer></mi-footer>
+  </form>
+  <script type="module"
+    src="js/CtrlHerramienta.js">
+    </script>
+</body>
+</html>
+
